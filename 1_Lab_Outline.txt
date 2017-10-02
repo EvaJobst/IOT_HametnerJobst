@@ -1,4 +1,4 @@
-﻿1. Lab Outline
+﻿1. Lab Outline (2. Oct 2017)
 mit Eva Jobst und Magdalena Hametner
 
   Password changed into HametnerJobst
@@ -74,4 +74,7 @@ run
 
 did work
 
+===
+
+(3. Oct 2017)
 TODO: Remote access to switch on blinking light
