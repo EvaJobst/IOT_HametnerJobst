@@ -1,5 +1,5 @@
-1. Lab Outline
-mit Eva Jobast und Magdalena Hametner
+﻿1. Lab Outline
+mit Eva Jobst und Magdalena Hametner
 
   Password changed into HametnerJobst
   Username changed into HametnerJobst
@@ -41,3 +41,11 @@ password bestätigt
 Nr. 2 ausgewählt
 
 worked :D
+
+
+cd home
+cd src/rpi-clone
+sudo ./rpi-clone -v sda
+
+Karte zum Reinstecken vergessen -> dadurch keinen Zugriff auf Partition
+Danach funktioniert
