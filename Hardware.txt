@@ -1,0 +1,9 @@
+Arduino D1 Mini
+Raspberry Pi 3
+	Platine
+	Hülle
+	Netzteil
+	Kühlteile
+	Speicherkarte
+Lan-Kabel
+Lötteile
