@@ -16,36 +16,62 @@ mit Eva Jobst und Magdalena Hametner
       On your machine port 5901 is available;
 
     Netzwerk-Name: HametnerJobst-da1885
-
       -->localhost did not work
+
       used IP
         -->Did not work either
 
 
-Netzwerk-Name: HametnerJobst-da1885
+Network-Name: HametnerJobst-da1885
 
+NOOBS (Boot) put into Laptop
+  + Inputs and alterations checked
 
+not worked :/
 
-NOOBS(Boot) erneute reingegeben + eingaben gecheckt
+conn. with wrong Network
+  --> conn. mit Raspberry Pi 3
 
-Erneut nicht funktioniert
+again ssh command executed
 
-mit falschem Netzwerk verbunden
+worked
+  --> with password confirmed
 
-Mit Pi verbunden
-
-ssh befehl ausgeführt:
-
-password bestätigt
-
-Nr. 2 ausgewählt
-
-worked :D
-
+select:
+  2. tmux:ulnoiot: ...
 
 cd home
 cd src/rpi-clone
 sudo ./rpi-clone -v sda
 
-Karte zum Reinstecken vergessen -> dadurch keinen Zugriff auf Partition
-Danach funktioniert
+Card was not placed correctly
+  --> Access denied to Partition
+
+Card placed correctly
+ --> worked
+
+Eva: "lötet"
+
+sudo chmod -R 755 /home/pi/apps arduino
+sudo chmod -R 755 /home/pi/apps arduino/*
+  --> Important: to make code executable
+      needed: because of errors in given Code
+      not needed again
+
+did not work
+
+Arduino IDE started
+  --> Tools - Board - Wemos D1 mini
+  --> File - example - ESP8266
+
+run
+
+did not work
+
+unplug and plug in D1 minis
+
+run
+
+did work
+
+TODO: Remote access to switch on blinking light
