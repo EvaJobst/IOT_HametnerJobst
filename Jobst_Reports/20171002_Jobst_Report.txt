@@ -57,3 +57,8 @@ TIA Movie
 
 DEMO TIME
 - Why is it IoT?
+	The project we have seen was the water-detector
+	It is IOT: 
+		- since it deals with data -> sends data to the phone in order to contact the person
+		- it needs a connection in order to send/receive the data on the phone
+		- there are multiple systems collaborating
