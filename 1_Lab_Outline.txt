@@ -1,0 +1,43 @@
+1. Lab Outline
+mit Eva Jobast und Magdalena Hametner
+
+  Password changed into HametnerJobst
+  Username changed into HametnerJobst
+
+  Raspberry Pi 3 build
+  Cooler inserted
+
+  IP: 192.168.12.1
+
+  Über GitBash:
+    ssh pi@ulnoiotgw -L5901:localhost:5901 (Befehl)
+    5901 = Port
+      If you are on the pi port 5901 is used;
+      On your machine port 5901 is available;
+
+    Netzwerk-Name: HametnerJobst-da1885
+
+      -->localhost did not work
+      used IP
+        -->Did not work either
+
+
+Netzwerk-Name: HametnerJobst-da1885
+
+
+
+NOOBS(Boot) erneute reingegeben + eingaben gecheckt
+
+Erneut nicht funktioniert
+
+mit falschem Netzwerk verbunden
+
+Mit Pi verbunden
+
+ssh befehl ausgeführt:
+
+password bestätigt
+
+Nr. 2 ausgewählt
+
+worked :D
