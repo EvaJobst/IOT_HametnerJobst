@@ -91,8 +91,6 @@ Independent slave configuration, there is an independent chip select line for ea
 SPI may be connected in a daisy chain configuration, the first slave output being connected to the second slave input, etc.
 
 ### Onewire
-
-
 Onewire is a communication bus system that provides low-speed data signaling and power over a single cable loop (One cable for data and power, the other for ground).
 
 The concept is simular to I²C, but has a lower data rate and a longer range. It's typically used in small and cheap devices.
@@ -124,5 +122,25 @@ variable data packes between 15 and 54 us
 recovery time 10 us.
 bis 750 m reichweite
 
+## MPR 121 capacitive sensor
 
+- Low power operation
+- 1.71 V to 3.6V supply operation
+- 29 uA supply current at 16 ms sampling interval periods
+- 3 uA Stop mode current
+- 12 capacitance sensing inputs
+- 8 Inputs are multifunctionla for LED driver and GPIO
+- Complete touch detection
+- Auto-configuration for each sensing input
+- Auto-calibartion for each sensing input
+- Touch/release threshold and debounce for touch detection
+- I²C interface, with interrupt output
+- 3mm x 3mm x 0.65 mm 20 lead QFN package
+- -40°C to + 85°C operating temperature range
 
+Connect Raspberry Pi 3.3V to MPR121 VIN.
+Connect Raspberry Pi GND to MPR121 GND.
+Connect Raspberry Pi SCL to MPR121 SCL.
+Connect Raspberry Pi SDA to MPR121 SDA.
+
+![alt text](https://cdn-learn.adafruit.com/assets/assets/000/021/912/original/sensors_MPR121_RaspberryPi_bb.png?1419316602 "MPR 21")
