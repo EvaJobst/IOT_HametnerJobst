@@ -2,6 +2,9 @@
 ## (3. Oct 2017)
 mit Eva Jobst und Magdalena Hametner
 
+- Eva: Code
+- Magdalena: Doku, Setup (Arduino, Sensors)
+
 IFTTT Notification event with webhook structed (Event: "notify_phone")
 
 Notification set with text
@@ -19,6 +22,10 @@ Notification tested and worked
 We did not know what to use for the host.
 
 ## (4. Oct 2017)
+
+- Magdalena: Doku, Setup (Arduino + Sensors)
+- Eva: Code
+
 ButtonPin = 10;
 Button is a input;
 
@@ -42,5 +49,16 @@ LED HIGH and LED LOW
 - When led is low the HTTP Request should be sent
 
 
-# Todo:
-Grundsätzlich Hello World wäre cool wenn Wetterservice auf Display eingebunden
+### LCD Display
+- Magdalena: Code, Setup (Arduino, Sensors)
+- Eva: User Stories, Dokumentation
+
+- Installed Driver and Program for Arduino on Magdalena's Mac -> works
+- Adding LCD Display to board; use of the extension board since we now have two pins that need a connection to the ground
+- We changed the pin of the button, since we need it for the LCD
+- Use of the example code ESP826612LCD; copying parts of it in the already modified HTTPSRequest
+- Not working! We did not change the Pin for the Button in code
+- Since the online resources weren't helping much --> trying possible inputs
+- Problem was actually that pin D2 does not have a connection --> need to fix this in the next lesson
+
+Currently: D2 -> not working; D3 -> SDA of LCD; D4 -> SCL; D1 -> Button-Signal
