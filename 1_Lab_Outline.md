@@ -1,4 +1,5 @@
-﻿1. Lab Outline
+# Lab Outline 1
+## (2. Oct 2017)
 mit Eva Jobst und Magdalena Hametner
 
   Password changed into HametnerJobst
@@ -74,4 +75,25 @@ run
 
 did work
 
-TODO: Remote access to switch on blinking light
+---------------------------
+
+## (3. Oct 2017)
+Raspberry Pi 3 connected to the Hub
+
+GitBash:
+- ssh pi@192.168.12.1 as ulnoiot did not work
+
+- VNC Viewer opened
+- - Arduino IDE opened
+- - - File - Example - WifiWebServer --> run
+- - - --> Did not run --> We thought, that our Wemos D1 mini is to small for this program
+- - - WifiWebSerer altered
+        --> Code from blinking program inserted
+- - - --> Did not workaltered
+- - - Tried to open the program from terminal to get some errors --> no good idea
+- - - correct solution:
+- - - - ssid and password altered (ssid = HametnerJobst-da1885 and password = HametnerJobst)
+- - - - in setup method: Serial.beginn(115200) altered baudrate
+- - - - Serial Monitor Baudrate altered to 115200 too
+
+worked :D
