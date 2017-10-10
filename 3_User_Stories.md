@@ -1,14 +1,14 @@
-﻿#User Stories
+# User Stories
 ## 1: Air Quality Controller
 
 **Sensor:** Gas + Sound + Temperature
 **People:** Herbert and Gertrude (+60)
 
-Herbert and Gertude have lived at their apartment for nearly 30 years. Their Odyssee began the day the building right next to their bedroom windows was torn down, with a new one being contructed. They were confronted with a lot of noise, it didn't matter much at that time since most of their daytime was spend at the living room anyway. 
+Herbert and Gertude have lived at their apartment for nearly 30 years. Their Odyssee began the day the building right next to their bedroom windows was torn down, with a new one being contructed. They were confronted with a lot of noise, it didn't matter much at that time since most of their daytime was spend at the living room anyway.
 
-Their troubles peeked once the new building turned out to be a new disco. They didn't sleep well anymore. Most difficult for them was the heat during summertime, since opening the window at day was not an option, during night even less now. Gertrude is quite sensitive to bad air quality, since she used to be a teacher and was exposed to it a lot of times. 
+Their troubles peeked once the new building turned out to be a new disco. They didn't sleep well anymore. Most difficult for them was the heat during summertime, since opening the window at day was not an option, during night even less now. Gertrude is quite sensitive to bad air quality, since she used to be a teacher and was exposed to it a lot of times.
 
-Herbert is a maker. He knows how to deal with sensors and microcontroller. In one of these sleepless nights he and his wife start their frustrated attempt at improving their situation. Both of them design a device which opens or closes their bedroom window. Herbert mounted the sound and temperature sensor right outside their window. The gas sensor is inside. The sound sensor decides if the noise outside gets too loud, the temperature sensor decides if it is too hot outside to open to window and the gas sensor measures the air quality inside. A smart algorithm decides whether the window should be opened or closed depending on these three factors. 
+Herbert is a maker. He knows how to deal with sensors and microcontroller. In one of these sleepless nights he and his wife start their frustrated attempt at improving their situation. Both of them design a device which opens or closes their bedroom window. Herbert mounted the sound and temperature sensor right outside their window. The gas sensor is inside. The sound sensor decides if the noise outside gets too loud, the temperature sensor decides if it is too hot outside to open to window and the gas sensor measures the air quality inside. A smart algorithm decides whether the window should be opened or closed depending on these three factors.
 
 Since that night they have been able to finally sleep well again and they lived happily ever after.
 
