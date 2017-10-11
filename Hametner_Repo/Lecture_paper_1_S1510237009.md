@@ -1,8 +1,6 @@
 # Vorlesungsarbeit
 Magdalena Hametner - Mo, 2. Oktober 2017
 
-
-
 ## Folie 4 - Who are you?
 ### What type of programming experience?
 Only what I have learned from FH.

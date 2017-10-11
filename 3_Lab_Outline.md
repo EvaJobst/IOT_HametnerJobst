@@ -24,3 +24,28 @@ with Magdalena Hametner and Eva Jobst
 
 ##### Build simulators for MQTT
 - mqtt_all
+
+##### (11. October 2017)
+with Eva Jobst and Magdalena Hametner
+
+| Exercise                | Done By           |
+|----------               |-------------      |
+| Code                    |  Jobst            |
+| Pair-Programming        |  Jobst, Hametner  |
+| Documentation           |  Hametner         |
+| Setup Arduino + Sensors | Hametner + Jobst  |
+
+//==
+
+Python installed
+
+pip install paho-mqtt --> Commandline library für mqtt geholt.
+
+Suche Python code der mit Mqtt arbeitet
+
+Program:
+Import paho.mqtt.client as mqtt
+
+BROKER ="192.168.12.1"
+TOPIC ='internetofthings'
+SUBTOPIC ='temperature'
