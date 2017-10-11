@@ -34,3 +34,18 @@ with Eva Jobst and Magdalena Hametner
 | Pair-Programming        |  Jobst, Hametner  |
 | Documentation           |  Hametner         |
 | Setup Arduino + Sensors | Hametner + Jobst  |
+
+//==
+
+Python installed
+
+pip install paho-mqtt --> Commandline library für mqtt geholt.
+
+Suche Python code der mit Mqtt arbeitet
+
+Program:
+Import paho.mqtt.client as mqtt
+
+BROKER ="192.168.12.1"
+TOPIC ='internetofthings'
+SUBTOPIC ='temperature'
