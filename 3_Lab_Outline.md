@@ -24,3 +24,13 @@ with Magdalena Hametner and Eva Jobst
 
 ##### Build simulators for MQTT
 - mqtt_all
+
+##### (11. October 2017)
+with Eva Jobst and Magdalena Hametner
+
+| Exercise                | Done By           |
+|----------               |-------------      |
+| Code                    |  Jobst            |
+| ||
+| Documentation           |  Hametner         |
+| Setup Arduino + Sensors | Hametner + Jobst  |
