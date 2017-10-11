@@ -1,22 +1,26 @@
 import paho.mqtt.client as mqtt
 import time
-import serial
 
 BROKER = "192.168.12.1"
-TOPIC = "internetofthings/"
-SUBTOPIC = "temperature"
+TOPIC = 'internetofthings/'
+SUB_TEMPERATURE = 'temperature'
+SUB_SWITCH = 'switch'
 
-arduino = serial.Serial("/dev/cu.wchusbserial1410", 115200)
+def on_message(client, userdata, msg):
+    # Process Temperature value
+    if msg.topic == TOPIC + SUB_TEMPERATURE:
+        print(msg.topic + " "+str(msg.payload))
 
-def on_message(client, userdata, msg): 
-    print(msg.topic + " "+str(msg.payload))
+        if int(msg.payload) >= 0:
+            client.publish(TOPIC+SUB_SWITCH, str(1))
+        else:
+            client.publish(TOPIC+SUB_SWITCH, str(0))
 
-    if int(msg.payload) == 0:
-        print("ON")
-        arduino.write("ON")
+
 
 client = mqtt.Client()
 client.on_message=on_message
 client.connect(BROKER, 1883, 60)
-client.subscribe(TOPIC)
+client.subscribe(TOPIC+SUB_TEMPERATURE)
+client.subscribe(TOPIC+SUB_SWITCH)
 client.loop_forever()
