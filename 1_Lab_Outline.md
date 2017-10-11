@@ -96,4 +96,7 @@ GitBash:
 - - - - in setup method: Serial.beginn(115200) altered baudrate
 - - - - Serial Monitor Baudrate altered to 115200 too
 
+http://192.168.12.213/LED=ON
+http://192.168.12.213/LED=OFF
+
 worked :D

@@ -91,6 +91,57 @@ What role will play
   - username/password credential based authentication
   - since Node-RED 0.17: authentication against any OAuth/OpenID provider such as Twitter or GitHub
 
+Hannes und Stefan:
+## AllJoyn
+
+- Title: AllJoyn - Merged into Iotivity - just stands for everyone can join for free
+
+- Publicly available / Open source / reference implementation?
+  - Open Source Framework
+  - Available for languages (C++, C, Java, Objective C)
+  - Plenty of samples in the official github repo (https://github.com/allseenalliance/core-alljoyn)
+
+- How good and plentiful is documentation (good examples, tutorials, videos)? Easy to understand?
+  - Plenty of docs and videos by the allseenalliance: https://allseenalliance.org/framework/documentation/develop/tutorial
+
+- Which devices/operating systems are supported (also as nodes)?
+  - Available on all major OS (win, android, ios, osx, linux, open wrt)
+
+- Mass deployment/maintainance (managing multiple nodes at once)?
+  -
+
+- Security/privacy (safe against man in the middle attacks)?
+  - AllJoyn has security as core part in its architecture
+  - Every communication between devices is encrypted
+
+## DeviceHive
+  - Homepage: https://devicehive.com/
+  - GitHub: https://github.com/devicehive
+
+- open source IoT data platform
+- wide range of device integration options
+- set up devices to interact with each other and the cloud
+- It provides: communication layer, control software, multi-platform libraries
+- Used for smart energy, home automation, remote sensing
+- Also provides: telemetry, remote control and monitoring software
+
+- Publicly available/open source/reference implementation?
+- DeviceHive is open source
+- A reference implementation is available on Github
+
+**How good and plentiful is documentation
+- Good dokumentation and code samples on their website
+- Some GitHub repositories and blog posts with examples
+
+Security/privacy
+- Security: A TLS API is available, with Web Token authentication
+
+Which devices/operating systems are supported
+- Support for many platforms/languages (e.g. esp8266: https://github.com/devicehive/esp8266-firmware !)
+
+GitHub
+allseenalliance/core-alljoyn
+core-alljoyn - Read-only mirror, pull requests are not accepted. https://wiki.allseenalliance.org/develop/reposito
 
 ### Life-Demo: Node-RED
 $ node-red

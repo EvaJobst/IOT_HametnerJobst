@@ -42,14 +42,10 @@ Blinking Led Program to test if network
 
 Fingerprint deleted as we need this only in the HTTPS
 
-File - Example - Button:
 ButtonPin = 2;
 
 LED HIGH and LED LOW
 - When led is low the HTTP Request should be sent
-
-http://192.168.12.213/LED=ON
-http://192.168.12.213/LED=OFF
 
 ### LCD Display
 - Magdalena: Code, Setup (Arduino, Sensors)

@@ -22,9 +22,6 @@ with Magdalena Hametner and Eva Jobst
 - It works -> though 0 is ON and 1 is off
 - Changed code so on message "0" LED switches ON and on message "1" LED switches OFF
 
-##### Build simulators for MQTT
-- mqtt_all
-
 ##### (11. October 2017)
 with Eva Jobst and Magdalena Hametner
 
@@ -35,17 +32,18 @@ with Eva Jobst and Magdalena Hametner
 | Documentation           |  Hametner         |
 | Setup Arduino + Sensors | Hametner + Jobst  |
 
-//==
+##### Build simulators for MQTT
+- mqtt_all wird benötigt
+- Python installed
+- get with the command pip install paho-mqtt the library mqtt
+- Search for python code which could work with MQTT.
 
-Python installed
+###### Program...
+- loops throug different temperatures
+- was published
+- and could be workd with.
 
-pip install paho-mqtt --> Commandline library für mqtt geholt.
-
-Suche Python code der mit Mqtt arbeitet
-
-Program:
-Import paho.mqtt.client as mqtt
-
-BROKER ="192.168.12.1"
-TOPIC ='internetofthings'
-SUBTOPIC ='temperature'
+###### Program-Files:
+- client.py
+- simulation.py
+- switch.py
