@@ -31,6 +31,6 @@ with Eva Jobst and Magdalena Hametner
 | Exercise                | Done By           |
 |----------               |-------------      |
 | Code                    |  Jobst            |
-| ||
+| Pair-Programming        |  Jobst, Hametner  |
 | Documentation           |  Hametner         |
 | Setup Arduino + Sensors | Hametner + Jobst  |
