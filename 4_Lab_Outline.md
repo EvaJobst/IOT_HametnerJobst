@@ -17,6 +17,6 @@ with Magdalena Hametner and Eva Jobst
 
 ![Old Wiring](Lab_Outline/Red_Node_Temperature_Simulation/wiring_old.jpg)
 
-- Adapt existing flow, so it replaces the [client.py](Lab_Outline/Temperature_Simulation/client.py)
+- Adapt existing flow, so it replaces the [client.py](Lab_Outline/Temperature_Simulation/client.py) of the previous assignment
 
-![Final Wiring](Lab_Outline/Red_Node_Temperature_Simulation/wiring_final.png)
+![Final Wiring](Lab_Outline/Red_Node_Temperature_Simulation/wiring_final.PNG)
