@@ -21,38 +21,42 @@
 
   http://www.arduino.cc/en/Tutorial/Button
 */
-
-// constants won't change. They're used here to set pin numbers:
-const int buttonPin = 2;     // the number of the pushbutton pin
-//const int ledPin =  13;      // the number of the LED pin
+// Button-Sensor:
+const int buttonPin = 2;
 bool buttonHasBeenPressed = true;
+int buttonState = 0;
+
+// LED-Actor: 
 int greenPin = 15;
 int redPin = 13;
+
+// Buzzer-Actor:
+int buzzerPin = 5;
+
+int buzzerOn = 0; // 1 == ON und 0 == OFF
 bool gasIsTrue = false;
 bool flameIsTrue = false;
-
-// variables will change:
-int buttonState = 0;         // variable for reading the pushbutton status
 
 void setup() {
   Serial.begin(115200);
   Serial.println();
-  // initialize the LED pin as an output:
-  //pinMode(ledPin, OUTPUT);
-  // initialize the pushbutton pin as an input:
-  pinMode(buttonPin, INPUT);
-  pinMode(redPin, OUTPUT); //set redPin as OUTPUT
-  pinMode(greenPin, OUTPUT);//set greenPin as OUTPUT
+  // Button-Sensor:
+  //pinMode(buttonPin, INPUT);
+
+  // LED-Actor:
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+
+  // Buzzer-Actor:
+  pinMode(buzzerPin, OUTPUT);
 }
 
 void loop() {
-  // read the state of the pushbutton value:
+  // Button-Sensor:
   buttonState = digitalRead(buttonPin);
 
-  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  
   if (buttonState == HIGH) {
-    // Serial.print("not pressed");
-    //digitalWrite(ledPin, HIGH);
     buttonHasBeenPressed = true;
   } else {
     if (buttonHasBeenPressed) {
@@ -60,6 +64,16 @@ void loop() {
     buttonHasBeenPressed = false;
     }
   }
+
+  // Buzzer-Actor:
+  if (buzzerOn == 1) {
+    analogWrite (buzzerPin, 255);
+  }
+  
+  if (buzzerOn == 0) {
+    analogWrite (buzzerPin, -1);
+  }
+  
   // to test
   gasIsTrue = false;
   flameIsTrue = false;
@@ -67,11 +81,12 @@ void loop() {
   char* t = "Topic";
   byte* p;
   LEDColor(t, p, len);
+  buzzerOn = 1;
 }
 
 void LEDColor(char* topic, byte* payload, unsigned int length) {
   // to test
-  /*switch(topic) {
+  switch(topic) {
     case "iot/led/gas:
     gasIsTrue = payload;
     Serial.print("GAS: "); // do sth
@@ -82,7 +97,7 @@ void LEDColor(char* topic, byte* payload, unsigned int length) {
     Serial.print("Flame: "); // do sth
     Serial.println(flameIsTrue);
     break;
-  }*/
+  }
 
   if (buttonHasBeenPressed) {
     if (gasIsTrue && flameIsTrue) { // Hier leuchtet das LED rot
