@@ -26,3 +26,8 @@ with Magdalena Hametner and Eva Jobst
 - Ran program -> Browser App was automatically opened
 - Configured with plugged in Arduino, ESP8266 and current WIFI-connection
 - Adapted init.js so the built-in-LED is toggled once a button has been pressed
+
+
+Magda:
+
+I tried to install MongooseOS on my Mac, but the access was denied.
