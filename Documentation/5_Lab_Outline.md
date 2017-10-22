@@ -133,4 +133,4 @@ On the extrernal we wirde: <USB2>
 - Problem: Due to bad internet connection, testing can't be done
 - In enclosed testing sessions the outside_node (except for buzzer) and the inside_node were working as expected
 
-### [node red Part]()
+### [node red Part](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/node_red_project.txt)
