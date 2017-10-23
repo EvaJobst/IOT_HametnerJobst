@@ -28,6 +28,62 @@ distance, optical distance, weight, binary conductive sensing)
   - CORRECT FORMAT: Serial.print("Acoustic Distance (cm): "); Serial.print(distance);
 - Delay of two seconds so we are not overwhelmed with values
 - Acoustic uses cm and Optical uses mm -> need to convert
+- Built system -> did test prints with water
+
+>It's raining!
+Optical Distance (cm): 17
+Acoustic Distance (cm): 8
+
+- Seem promising -> will finetune code now
+- Values are now printed in Markdown table syntax
+
+##### Water
+|Nr.|Opt. Distance|Acoust. Distance| Opt. Height | Acoust. Height |Is Conductive|
+|----|----|----|----|----|----|
+| 0 | 10 | 0 |True |
+| 1 | 10 | 4 |True |
+| 2 | 9 | 5 |True |
+| 3 | 10 | 5 |True |
+| 4 | 10 | 0 |True |
+| 5 | 10 | 5 |True |
+| 6 | 8 | 0 |True |
+| 7 | 9 | 0 |True |
+| 8 | 10 | 0 |True |
+| 9 | 8 | 5 |True |
+
+##### Oil
+|Nr.|Optical Distance|Acoustic Distance|Is Conductive|
+|----|----|----|----|
+| 67 | 14 | 6 |False |
+| 68 | 13 | 5 |False |
+| 69 | 12 | 5 |False |
+| 70 | 13 | 5 |False |
+| 71 | 13 | 5 |False |
+| 72 | 13 | 5 |False |
+| 73 | 13 | 5 |False |
+| 74 | 13 | 5 |False |
+| 75 | 13 | 5 |False |
+| 76 | 13 | 5 |False |
+
+- TODO: Add measurement that measures height of water through different methods -> Distance measuring and water sensoring
+  - Container Height: 10cm
+  - Liquid Height: 4cm
+  - **Desired Result:** 6cm
+
+- Adding Analog Pin to Arduino code + set up again
+- Calibrating Raindrop Sensor, after how far the module is encapsulated by water:
+  - 0%: ~977-1.023 (actual max. value is 1023)
+  - 10%: 456, 420
+  - 50%: ~350
+  - 80%: 254, 264
+  - 100%: 0
+- Calibration according to Two-Point-Calibration, Source: https://learn.adafruit.com/calibrating-sensors/two-point-calibration
+  - CorrectedValue = (((RawValue – RawLow) * ReferenceRange) / RawRange) + ReferenceLow
+  - RawLow: 456, RawHigh 254, ReferenceHigh 264, ReferenceLow 420
+  - ReferenceRange -> 264 - 420
+  - RawRange -> 254 - 456
+
+- **Sidenote:** Program is not uploading if the arduino and modules are not on the same level/plane
 
 ## Add Switches and measure Water and Oil
 
