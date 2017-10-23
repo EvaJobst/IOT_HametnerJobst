@@ -39,6 +39,33 @@ ______________________
 - Different expectations between IT executives and business executives
 - Lack of collaboration between IT and business side
 
-## How can it be fixed/counter measures?
+### IoT Discussion
 
-## Newsworthy failures/successes
+- Automation of daily life
+- Easily access information
+- IoT is new and difficult to develop
+- 700 different possible devices for one scenario
+- If you properly setup devices, you can even be woken up by a toaster.
+- Personal data is saved and needs to be protected
+- IoT devices can be abused (e.g. fire alarm as morning alarm)
+
+- Example: Guy in huge company was able to control whole building
+- Also: nuclear weapons can be a potential risk
+	-> Additional security measures
+
+- New jobs
+- Loosing jobs
+- e.g. gas station
+
+- No system is 100% secure
+- Time & Costs
+- Cisco provides certifications for security mechanisms
+
+- Is it possible to enable secure embeded systems?
+- Question about waranty and legal rights?
+- What happens when a malfunctioning device causes damage?
+
+- Environmental impact?
+- No argument against IoT
+- Poor people are exploited anyway
+- Software is expensive
