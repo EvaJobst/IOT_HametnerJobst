@@ -91,16 +91,15 @@ On the extrernal we wirde: <USB2>
     - LED green Pin: 0
     - LED red Pin: 255
 
-
-
 ### UlnoIOT Part
 - added a bunch of nodes for each sensor -> disregarded idea in order to have one for each arduino and add the sensors/actors to the autostart file
 - added outside_node
   modified autostart.py of outside_node to:
 
-    button("ulnoiotBTN", d3, 0, 1)
-    led("ulnoiotLEDG", d7, "on", "off")
-    led("ulnoiotLEDR", d8, "on", off)
+    button("ulnoiotBTN", d0, 0, 1)
+    led("ulnoiotLEDG", d2, "on", "off")
+    led("ulnoiotLEDR", d1, "on", off)
+    output("ulnoiotBUZZER", d5, "on", "off")
     run(10)
 
 - The respective led-colours are turned on when the command "on" is received, turned off with the message "off"
@@ -134,3 +133,5 @@ On the extrernal we wirde: <USB2>
 - In enclosed testing sessions the outside_node (except for buzzer) and the inside_node were working as expected
 
 ### [node red Part](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/node_red_project.txt)
+
+##### 23. Oktober 2017
