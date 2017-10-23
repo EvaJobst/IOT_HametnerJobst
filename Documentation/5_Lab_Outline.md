@@ -136,3 +136,4 @@ On the extrernal we wirde: <langes Kabel>
 - But Buzzer is not sending a signal -> problem: not direct support in ulnoIOT -> looking for workaround
 - Problem: Due to bad internet connection, testing can't be done
 - In enclosed testing sessions the outside_node (except for buzzer) and the inside_node were working as expected
+- Dropping buzzer for now
