@@ -92,19 +92,15 @@ On the extrernal we wirde: <langes Kabel>
     - LED green Pin: 0
     - LED red Pin: 255
 
-// NODE-RED - fertig machen
-< [{"id":"d311091a.41ebe","type":"tab","label":"Ulnoiot_Project","disabled":false,"info":""},{"id":"8d52d8fb.fc07d","type":"mqtt in","z":"d311091a.41ebe","name":"Button Subscriber","topic":"outside_node/ulonoiotBTN","qos":"0","broker":"65997223.341d04","x":95,"y":40,"wires":[["631c8495.a66dcc"]]},{"id":"631c8495.a66dcc","type":"switch","z":"d311091a.41ebe","name":"switch BTN","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"0","vt":"str"},{"t":"eq","v":"1","vt":"str"}],"checkall":"true","outputs":2,"x":291,"y":40,"wires":[["bcb6d7ff.1fcee","a0318962.8a74e8"],["6e95a091.35c278","b9337ff1.5d9a9"]]},{"id":"25c0e9b7.ed538e","type":"inject","z":"d311091a.41ebe","name":"button not clicked","topic":"","payload":"1","payloadType":"str","repeat":"","crontab":"","once":false,"x":150,"y":140,"wires":[[]]},{"id":"bcb6d7ff.1fcee","type":"change","z":"d311091a.41ebe","name":"Green on","rules":[{"t":"set","p":"green","pt":"msg","to":"255","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":480,"y":20,"wires":[["e244fd5a.48586"]]},{"id":"a0318962.8a74e8","type":"change","z":"d311091a.41ebe","name":"Red off","rules":[{"t":"set","p":"red","pt":"msg","to":"0","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":480,"y":60,"wires":[["b6313b11.36f65"]]},{"id":"6e95a091.35c278","type":"change","z":"d311091a.41ebe","name":"Green off","rules":[{"t":"set","p":"green","pt":"msg","to":"0","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":480,"y":100,"wires":[["e244fd5a.48586"]]},{"id":"b9337ff1.5d9a9","type":"change","z":"d311091a.41ebe","name":"Red on","rules":[{"t":"set","p":"red","pt":"msg","to":"255","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":480,"y":140,"wires":[["b6313b11.36f65"]]},{"id":"e244fd5a.48586","type":"mqtt out","z":"d311091a.41ebe","name":"LED green","topic":"outside_node/ulnoiotLEDG","qos":"0","retain":"","broker":"65997223.341d04","x":690,"y":40,"wires":[]},{"id":"b6313b11.36f65","type":"mqtt out","z":"d311091a.41ebe","name":"LED red","topic":"outside_node/ulnoiotLEDR","qos":"0","retain":"","broker":"65997223.341d04","x":680,"y":120,"wires":[]},{"id":"8fca7ac4.9abed8","type":"inject","z":"d311091a.41ebe","name":"button click","topic":"","payload":"0","payloadType":"str","repeat":"","crontab":"","once":false,"x":130,"y":100,"wires":[[]]},{"id":"65997223.341d04","type":"mqtt-broker","z":"","broker":"192.168.12.1","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}] >
-
-
 ### UlnoIOT Part
 - added a bunch of nodes for each sensor -> disregarded idea in order to have one for each arduino and add the sensors/actors to the autostart file
 - added outside_node
   modified autostart.py of outside_node to:
 
-
-    button("ulnoiotBTN", d3, 0, 1)
-    led("ulnoiotLEDG", d7, "on", "off")
-    led("ulnoiotLEDR", d8, "on", off)
+    button("ulnoiotBTN", d0, 0, 1)
+    led("ulnoiotLEDG", d2, "on", "off")
+    led("ulnoiotLEDR", d1, "on", off)
+    output("ulnoiotBUZZER", d5, "on", "off")
     run(10)
 
 - The respective led-colours are turned on when the command "on" is received, turned off with the message "off"
@@ -137,3 +133,7 @@ On the extrernal we wirde: <langes Kabel>
 - Problem: Due to bad internet connection, testing can't be done
 - In enclosed testing sessions the outside_node (except for buzzer) and the inside_node were working as expected
 - Dropping buzzer for now
+
+### [node red Part](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/node_red_project.txt)
+
+##### 23. Oktober 2017
