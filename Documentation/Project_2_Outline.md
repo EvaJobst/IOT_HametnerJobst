@@ -147,3 +147,42 @@ Acoustic Distance (cm): 8
 |Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
 |----|----|----|----|----|----|----|
 | 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
+## Measure Water, Oil and Dirty Water
+
+
+# Scale
+##### 24. Oktober 2017
+
+Arduino - Library hx711 install - open Example/.../calibrate
+
+begin: 696 scale Factor
+Sending 'l' from the serial terminal decrease factor by 1.0
+      - Sending 'L' from the serial terminal decrease factor by 10.0
+      - Sending 'h' from the serial terminal increase factor by 1.0
+      - Sending 'H' from the serial terminal increase factor by 10.0
+      - Sending 't' from the serial terminal call tare function
+
+new scale Factor: 408.5
+
+## Wasser:
+4/10 Wassermenge --> 112g (Wasser + Glas)
+
+--> Glas ohne Wasser --> 34g
+
+78g Wasser bei 4/10 Wasserstand
+
+78/4*10 = 195g max. Wassergewicht (Glas voll)
+
+Gesamtgewicht: (100g - 34g)/195g*100 = 33,85%
+
+## Öl
+
+4/10 Ölmenge --> 107,5g (Öl + Glas)
+
+Glas siehe oben
+
+Öl allein: 107,5g-34g = 73,5g
+
+volles Glas 73,5g/4*10 = 183,75g
+
+Gesamtgewicht: (x - 34g)/183,75g*100
