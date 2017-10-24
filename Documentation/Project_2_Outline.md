@@ -1,5 +1,11 @@
 # Project 02 - Liquid Challenge
 
+|Teammember|Work|
+|----|----|
+|Eva Jobst| all sensors but scale|
+|Magdalena Hametner| scale sensor|
+
+
 ## Part 1 - Implement Sensors to measure Water and Oil
 Goal: measuring liquid (water and oil) challenge (acoustic
 distance, optical distance, weight, binary conductive sensing)
@@ -90,7 +96,7 @@ Acoustic Distance (cm): 8
 - Switch is added according to the instructions from https://www.sunfounder.com/learn/Sensor-Kit-v2-0-for-Arduino/lesson-18-reed-switch-sensor-kit-v2-0-for-arduino.html
 - Reed-Switch is functional but will only output "FALSE", since it does not swim in our setup and thus is not included
 
-## Measurements
+## Measure Water, Oil and Dirty Water
 #### Water
 |Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
 |----|----|----|----|----|----|----|
@@ -104,11 +110,6 @@ Acoustic Distance (cm): 8
 | 7 | 6 cm | 5 cm |4 cm |5 cm | True | False |
 | 8 | 5 cm | 0 cm |5 cm |10 cm | True | False |
 | 9 | 6 cm | 5 cm |4 cm |5 cm | True | False |
-
-##### Average
-|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
-|----|----|----|----|----|----|----|
-| 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
 
 #### Oil
 |Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
@@ -124,11 +125,6 @@ Acoustic Distance (cm): 8
 | 8 | 9 cm | 0 cm |1 cm |10 cm | False | False |
 | 9 | 10 cm | 0 cm |0 cm |10 cm | False | False |
 
-##### Average
-|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
-|----|----|----|----|----|----|----|
-| 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
-
 #### Coca-Cola - "Dirty Water"
 |Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
 |----|----|----|----|----|----|----|
@@ -143,46 +139,62 @@ Acoustic Distance (cm): 8
 | 8 | 7 cm | 0 cm |3 cm |10 cm | True | False |
 | 9 | 8 cm | 0 cm |2 cm |10 cm | True | False |
 
-##### Average
-|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
-|----|----|----|----|----|----|----|
-| 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
-## Measure Water, Oil and Dirty Water
+#### Conclusion
+##### Average - Water:
+|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height |
+|----|----|----|----|
+| 5,4 cm | 2,4 cm |4,6 cm |7,6 cm |
 
+##### Average - Cola:
+|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height |
+|----|----|----|----|
+| 7,5 cm | 0,6 cm |2,5 cm |9,4 cm |
+
+##### Average - Oil:
+|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height |
+|----|----|----|----|
+| 9,1 cm | 0 cm |0,9 cm |10 cm |
+
+In conclusion the values we have got, as we measured the Water, are more accurate than the values of the other liquids.
+
+The values of the liquides "Cola" and "Oil" are a bit odd. As for example the acoustic distance is 0 at "Average - Oil".
+
+We think that the sensors do not work properly.
+
+"Is Conductive" mean if the liquid is conductive or not and "Is Full" is always false as we only filled 4cm into the jar.
+
+## Set up:
+[Pic 1](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1026.JPG), [Pic 2](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1027.JPG), [Pic 3](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1028.JPG), [Pic 4](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1029.JPG), [Pic 5](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1030.JPG)
 
 # Scale
 ##### 24. Oktober 2017
+Arduino - Library hx711 install - open Example/HX711/calibrate
 
-Arduino - Library hx711 install - open Example/.../calibrate
+Start-Scale-Factor 696
 
-begin: 696 scale Factor
-Sending 'l' from the serial terminal decrease factor by 1.0
-      - Sending 'L' from the serial terminal decrease factor by 10.0
-      - Sending 'h' from the serial terminal increase factor by 1.0
-      - Sending 'H' from the serial terminal increase factor by 10.0
-      - Sending 't' from the serial terminal call tare function
+put those letters into the serial monitor while calibrate run
 
-new scale Factor: 408.5
+| letter | increase & deacrease | what it does |
+| ---- | ---- | ---- |
+|L|decreas factor by 10.0|this reduces the scale-factor by 10.0 and so the return value of the scale increases|
+|h|increase factor by 1.0|this reduces the scale-factor by 1.0 and so the return value of the scale decreases|
+|H|increase factor by 1.0|this reduces the scale-factor by 10.0 and so the return value of the scale decreases|
+|t|call tare function|-|
 
-## Wasser:
-4/10 Wassermenge --> 112g (Wasser + Glas)
+new Scale-Factor: 408.5
 
---> Glas ohne Wasser --> 34g
+## Water:
+- Water-amount: 4/10 of the jar
+- water + jar: 4/10 water-amount = 112g
+- jar + without water: 34g
+- water: 112g-34g = 78g
+- jar filled: 78g/4*100 = 195g
+- whole weight: (100g-34g)/195g*100 = 33,85%
 
-78g Wasser bei 4/10 Wasserstand
-
-78/4*10 = 195g max. Wassergewicht (Glas voll)
-
-Gesamtgewicht: (100g - 34g)/195g*100 = 33,85%
-
-## Öl
-
-4/10 Ölmenge --> 107,5g (Öl + Glas)
-
-Glas siehe oben
-
-Öl allein: 107,5g-34g = 73,5g
-
-volles Glas 73,5g/4*10 = 183,75g
-
-Gesamtgewicht: (x - 34g)/183,75g*100
+## Oil:
+- Oil-amount: 4/10 of the jar
+- oil + jar: 4/10 oil-amount = 107,5g
+- jar + without oil: 34g
+- oil: 107,5g-34g = 73,5g
+- jar filled: 73,5g/4*10 = 183,75g
+- whole weight: (x-34g)/183,75g*100
