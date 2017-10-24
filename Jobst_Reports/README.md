@@ -1,6 +1,17 @@
 # Portfolio von Eva Jobst
 ## Lecture
-bitte noch selbst schreiben!!! :D
+
+|Date|Link|
+|----|----|
+|2.10.|[Session 1](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171002_Jobst_Report.md)|
+|3.10.|[Session 2](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171003_Jobst_Report.md)|
+|10.10.|[Session 3](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171010_Jobst_Report.md)|
+|11.10.|[Session 4](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171011_Jobst_Report.md)|
+|16.10.|[Session 5](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171016_Jobst_Report.md)|
+|17.10.|[Session 6](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171017_Jobst_Report.md)|
+|23.10.|[Session 7](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171023_Jobst_Report.md)|
+
+
 ## Exercise
 ### [Lab Outline 1](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/1_Lab_Outline.md)
 On the 2. October 2017 we worked on this lab outline. In this lesson we set up our Raspberry Pi 3. We also started to work with the Arduino IDE and built different programms.
