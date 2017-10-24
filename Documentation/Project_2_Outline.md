@@ -7,9 +7,10 @@ distance, optical distance, weight, binary conductive sensing)
 #### Pinout
 |Sensor|Use Case|Pin|Details|
 |----|----|----|----|
-|HC-SR04|Acoustic Distance|Echo D4; Trigger D3|Code: ultrasonic_sensor.ino; Source: http://www.esp8266learning.com/wemos-mini-hc-sr04-ultrasonic-sensor.php; 3.3V|
-|VL53L0X|Optical Distance|SDA D2; SCL D1|Code: Continuous.ino; Source: https://github.com/pololu/vl53l0x-arduino; 3.3V|
-|Raindrop Sensor|Binary Conduction|D0|Code: rain_sensor.ino; Source: https://www.sunfounder.com/learn/Sensor-Kit-v2-0-for-Arduino/lesson-34-raindrop-detection-sensor-kit-v2-0-for-arduino.html; 3.3V|
+|HC-SR04|Acoustic Distance|Echo D4; Trigger D3|Code: ultrasonic_sensor.ino and 1_sensors.ino; Source: http://www.esp8266learning.com/wemos-mini-hc-sr04-ultrasonic-sensor.php; 3.3V|
+|VL53L0X|Optical Distance|SDA D2; SCL D1|Code: distance_sensor.ino and 1_sensors.ino; Source: https://github.com/pololu/vl53l0x-arduino; 3.3V|
+|Raindrop Sensor|Binary Conduction|D0|Code: rain_sensor.ino and 1_sensors.ino; Source: https://www.sunfounder.com/learn/Sensor-Kit-v2-0-for-Arduino/lesson-34-raindrop-detection-sensor-kit-v2-0-for-arduino.html; 3.3V|
+|Reed Switch|Fullness of Container|D5|Code: 1_sensors.ino; Source: https://www.sunfounder.com/learn/Sensor-Kit-v2-0-for-Arduino/lesson-18-reed-switch-sensor-kit-v2-0-for-arduino.html|
 
 #### Notes
 - Trying to connect the Ultrasonic Sensor and have it print its values
@@ -85,6 +86,64 @@ Acoustic Distance (cm): 8
 
 - **Sidenote:** Program is not uploading if the arduino and modules are not on the same level/plane
 
-## Add Switches and measure Water and Oil
+## Add Switch
+- Switch is added according to the instructions from https://www.sunfounder.com/learn/Sensor-Kit-v2-0-for-Arduino/lesson-18-reed-switch-sensor-kit-v2-0-for-arduino.html
+- Reed-Switch is functional but will only output "FALSE", since it does not swim in our setup and thus is not included
 
-## Measure Water, Oil and Dirty Water
+## Measurements
+#### Water
+|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
+|----|----|----|----|----|----|----|
+| 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
+| 1 | 5 cm | 4 cm |5 cm |6 cm | True | False |
+| 2 | 6 cm | 0 cm |4 cm |10 cm | True | False |
+| 3 | 5 cm | 5 cm |5 cm |5 cm | True | False |
+| 4 | 5 cm | 0 cm |5 cm |10 cm | True | False |
+| 5 | 5 cm | 5 cm |5 cm |5 cm | True | False |
+| 6 | 5 cm | 0 cm |5 cm |10 cm | True | False |
+| 7 | 6 cm | 5 cm |4 cm |5 cm | True | False |
+| 8 | 5 cm | 0 cm |5 cm |10 cm | True | False |
+| 9 | 6 cm | 5 cm |4 cm |5 cm | True | False |
+
+##### Average
+|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
+|----|----|----|----|----|----|----|
+| 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
+
+#### Oil
+|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
+|----|----|----|----|----|----|----|
+| 0 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 1 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 2 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 3 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 4 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 5 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 6 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 7 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 8 | 9 cm | 0 cm |1 cm |10 cm | False | False |
+| 9 | 10 cm | 0 cm |0 cm |10 cm | False | False |
+
+##### Average
+|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
+|----|----|----|----|----|----|----|
+| 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
+
+#### Coca-Cola - "Dirty Water"
+|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
+|----|----|----|----|----|----|----|
+| 0 | 8 cm | 0 cm |2 cm |10 cm | True | False |
+| 1 | 7 cm | 0 cm |3 cm |10 cm | True | False |
+| 2 | 7 cm | 6 cm |3 cm |4 cm | True | False |
+| 3 | 8 cm | 0 cm |2 cm |10 cm | True | False |
+| 4 | 8 cm | 0 cm |2 cm |10 cm | True | False |
+| 5 | 7 cm | 0 cm |3 cm |10 cm | True | False |
+| 6 | 8 cm | 0 cm |2 cm |10 cm | True | False |
+| 7 | 7 cm | 0 cm |3 cm |10 cm | True | False |
+| 8 | 7 cm | 0 cm |3 cm |10 cm | True | False |
+| 9 | 8 cm | 0 cm |2 cm |10 cm | True | False |
+
+##### Average
+|Nr.|Opt. Dist.|Acoust. Dist.| Opt. Height | Acoust. Height | Is Conductive | Is Full |
+|----|----|----|----|----|----|----|
+| 0 | 6 cm | 0 cm |4 cm |10 cm | True | False |
