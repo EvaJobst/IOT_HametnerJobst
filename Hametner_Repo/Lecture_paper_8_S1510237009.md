@@ -43,7 +43,7 @@ new Transmission standard
 pics 1 2
 
 ### Google: LORA in Austria and Linz
-[]()
+[TTN](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Pics/TTN.png)
 
 ### What is TTN?
 - https://www.thethingsnetwork.org
