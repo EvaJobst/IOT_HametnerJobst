@@ -40,7 +40,7 @@ new Transmission standard
 - This form of modulation enables LoRa systems to demodulate signals that are 20dB below the noise floor when the demodulation is combined with forward error correction, FEC. This means that the link budget for a LoRa system can provide an improvement of more than 25dB when compared to a traditional FSK system.
 
 ### Googel "radio link budget calculator"
-pics 1 2
+[Perg Hagenberg](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Pics/Perg_Hagenberg01.png)
 
 ### Google: LORA in Austria and Linz
 [TTN](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Pics/TTN.png)
