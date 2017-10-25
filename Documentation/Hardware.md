@@ -1,11 +1,12 @@
 ## Eva Jobst und Magdalena Hametner
 
-Arduino D1 Mini
-Raspberry Pi 3
-	Platine
-	Hülle
-	Netzteil
-	Kühlteile
-	Speicherkarte
-Lan-Kabel
-Lötteile
+- 4 x Arduino D1 Mini
+- Raspberry Pi 3
+	- Platine
+	- HÃ¼lle
+	- Netzteil
+	- KÃ¼hlteile
+	- Speicherkarte
+- Lan-Kabel
+- LÃ¶tteile
+- 4 x USB-Kabel
