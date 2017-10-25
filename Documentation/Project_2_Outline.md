@@ -163,6 +163,12 @@ We think that the sensors do not work properly.
 
 "Is Conductive" mean if the liquid is conductive or not and "Is Full" is always false as we only filled 4cm into the jar.
 
+Water: Here was the optic distance sensor perfect, as we always got accurate values. But the acoustic sensor seams send more exact data when sensor sends values.
+
+Oil: Here we had troubles as values did not meet the expectations.
+
+Cola: The values were send as the sensor send values but we cannot recommend any sensor here.
+
 ## Set up:
 [Pic 1](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1026.JPG), [Pic 2](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1027.JPG), [Pic 3](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1028.JPG), [Pic 4](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1029.JPG), [Pic 5](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/pics/IMG_1030.JPG)
 
