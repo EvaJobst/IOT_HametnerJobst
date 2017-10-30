@@ -13,6 +13,22 @@ Here can the lectur paper 3 be read.
 ### [Lecture Paper 4](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_4_S1510237009.md)
 Todays lecture speeded way. I really like the teamwork.
 
+### Lecture Paper 5
+There is no lecture paper 5 as I wasn´t in the Lecture.
+
+### [Lecture Paper 6](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_6_S1510237009.md)
+Today was a life demo from our prof.
+That was very interessing, I did not make many notes as I tried to follow the demo.
+
+### [Lecture Paper 7](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_7_S1510237009.md)
+Todays lecture we tried to find pro and contra aspects to IoT or "the internet of broken things" ^^
+That was very cool as we formed bigger groups and discussed the different aspects of IoT.
+
+### [Lecture Paper 8](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_8_S1510237009.md)
+
+### Lecture Paper 9
+Did not exist, as i was not in the Lecture
+
 ## Exercise
 ### [Lab Outline 1](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/1_Lab_Outline.md)
 On the 2. October 2017 we worked on this lab outline. In this lesson we set up our Raspberry Pi 3. We also started to work with the Arduino IDE and built different programms.
@@ -35,6 +51,8 @@ We also created a programm ([HTTPSRequestLCD](https://github.com/EvaJobst/IOT_Ha
 On the 10. October 2017 we worked on the programm [ESP8266I2CLCD](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/ESP8266I2CLCD/ESP8266I2CLCD.ino). This program prints out installed CoAP plugin for Firefox.
 
 Further we created the program [Temperatur_Simulator](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Lab_Outline/Temperature_Simulation).
+
+# get from EVA
 
 ### [Project 1](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Projects/Project_1/Project_1_ButtonAndLED)
 Our first Project is a kind of fire alarm. More the be found [here](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/Project_1_Outline.md).

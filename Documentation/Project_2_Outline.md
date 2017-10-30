@@ -1,9 +1,9 @@
 # Project 02 - Liquid Challenge
 
-|Teammember|Work|
+|Teammember:|Work:|
 |----|----|
-|Eva Jobst| all sensors but scale|
-|Magdalena Hametner| scale sensor|
+|Eva Jobst| all sensors but scale, documentation|
+|Magdalena Hametner| scale sensor, documentation|
 
 
 ## Part 1 - Implement Sensors to measure Water and Oil
