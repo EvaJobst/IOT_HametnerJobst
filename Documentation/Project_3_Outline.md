@@ -15,25 +15,46 @@ Jon Snow wants to be awaken at a spezific time. But there shouldn´t go of the a
 
 ## User Scenario:
 ### Comfort:
-- Notification as beer gets too warm
-- Notification if beer is empty and your are too drunk to notify
-  - get soon enough another beer
-- you are not awoken with a horrible alarm but with the sun
-  - so you wont be grumpy right after a good nights sleep
-- if you want to sleep a bit more you can close the >Rollos< again and set the awake-time new
-- if you don´t fill beer but tea into the >Behälter< you can know what temperature is has and put the tea to the correct temperature in
+#### Notification if beer gets warm:
+Jon Snow likes his beer cold not warm and often he gets involved in a conversation with his friends and so he loses track of time. While he talks his beer gets warmer and warmer.
 
-### Entertainment:
-- who can drink the most?
-- who can drink the fastest?
-- if you make a movie-day and you stay all day in your bed
-  - you can close the >Rollos< from where you are and you don´t have to move (--> this could also be ah comfort)
+So the smart glass/stein sends a notification to his phone, warning him that his beer is warmer than 15°. Now he knows that he needs to speed up and drink his beer or get him another cooler one.
 
-### Health:
-- you can monitor how much you drunk
-- you awake pleased and not grumpy
+#### Notification if beer gets empty:
+Jon Snow and his friend Hodor love to challenge each other and so at the Party it normally ends in, who can drink his beer the fastest.
 
-###
-- Rollos not
-- Bierkonsum Location vergleich
-- 
+The smart stein has a raindrop-sensor and this sensor helps to verify the winner. As the smart stein sends a notification to the owner´s phone if the stein gets empty.
+
+#### Order new beer before finished the last:
+The waiter, Varis, works in Jon Snow´s favorit pub. For his friends he had his phone linked to the smart steins. !!! So if Jon Snow´s stein empties the waiter Varis gets a notification and he is able to refill the smart stein.
+
+#### no dreadful alarm:
+After a long night of talking and dancing Jon Snow and his girlfriend Dany want to be awaken but not in the normal fashion. Both don´t like the jarring sound of the alarm but would really like to be awoken with the sun.
+
+So Jon sets the time to be awoken and the blinds move up and they can be awoken with the sun-rays.
+
+It also has a special feature, as Dany wants to sleep a bit longer Jon closes the blinds remotly and sets a new time to be awoken.
+
+#### Tea:
+Jon Snow not only can fill beer into the smart stein but also Tea and so he can monitor if the water has the correct temperature for his tea.
+
+>Look above:
+
+>### Entertainment:
+#### Challenges:
+##### Who can drink the fastest:
+
+>##### Who can drink the most:
+
+>##### Waiter: Who can refill drinks the fastest:
+
+>### Health:
+#### Monitor how much you drunk:
+
+>#### Feed the baby/child with right temperatured food
+
+>#### If tea is too hot --> don´t drink
+
+>#### Don´t interrupt the sleep with jarring alarm
+
+>#### Check alcohol level

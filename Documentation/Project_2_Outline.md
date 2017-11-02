@@ -204,3 +204,5 @@ new Scale-Factor: 408.5
 - oil: 107,5g-34g = 73,5g
 - jar filled: 73,5g/4*10 = 183,75g
 - whole weight: (x-34g)/183,75g*100
+
+=> we don´t recommend the scale as it is to expensive and you need more than one scale to get accurate values
