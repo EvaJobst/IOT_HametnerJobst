@@ -52,7 +52,7 @@
 ### [Lab Outline 8](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/8_Lab_Outline/8_Lab_Outline.md)
 |Date|Description|
 |---|---|
-|24. Oct. and 25. Oct.|...|
+|24. Oct. and 25. Oct.|This time we tried Lora.|
 
 ## Projects
 ### [Project 1](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Projects/Project_1/)

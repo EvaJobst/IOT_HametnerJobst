@@ -1,7 +1,7 @@
 # Projekt 1
 | What?             | Done By       	 |
 |----------         |-------------  	 |
-| Program           |	Jobst + Hametner |
+| Program           |	Hametner |
 | Documentation     | Jobst + Hametner |
 | Pair-Programming	|	Jobst + Hametner |
 

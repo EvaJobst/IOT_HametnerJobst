@@ -134,4 +134,8 @@ On the extrernal we wirde: <langes Kabel>
 - In enclosed testing sessions the outside_node (except for buzzer) and the inside_node were working as expected
 - Dropping buzzer for now
 
-### [node red Part](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/node_red_project.txt)
+### node red Part
+I (Magdalena Hametner) did the Node red part.
+
+[old](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_1/node-red.txt)
+[current](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_1/current.txt)
