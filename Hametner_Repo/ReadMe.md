@@ -1,33 +1,21 @@
-# Portfolio von Magdalena Hametner
+# Portfolio von Magdalena
 ## Lecture
-### [Lecture Paper 1](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_1_S1510237009.md)
-I personally found the lecture interesting as I did not really know anything about IoT.
-I did not have any expectations.
 
-### [Lecture Paper 2](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_2_S1510237009.md)
-I really do like the way the lecture is structured. It is unusual but it is works great.
+|Date|Link|
+|----|----|
+|2.10.|[Session 1](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171002_Jobst_Report.md)|
+|3.10.|[Session 2](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171003_Jobst_Report.md)|
+|10.10.|[Session 3](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171010_Jobst_Report.md)|
+|11.10.|[Session 4](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171011_Jobst_Report.md)|
+|16.10.|[Session 5](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171016_Jobst_Report.md)|
+|17.10.|[Session 6](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171017_Jobst_Report.md)|
+|23.10.|[Session 7](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171023_Jobst_Report.md)|
+|24.10.|[Session 8](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171024_Jobst_Report.md)|
+|25.10.|[Session 9](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171025_Jobst_Report.md)|
+|30.10.|[Session 10](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171030_Jobst_Report.md)|
+|31.10.|[Session 11](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171031_Jobst_Report.md)|
+|06.11.|[Session 12](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Jobst_Reports/20171106_Jobst_Report.md)|
 
-### [Lecture Paper 3](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_3_S1510237009.md)
-Here can the lectur paper 3 be read.
-
-### [Lecture Paper 4](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_4_S1510237009.md)
-Todays lecture speeded way. I really like the teamwork.
-
-### Lecture Paper 5
-There is no lecture paper 5 as I wasn´t in the Lecture.
-
-### [Lecture Paper 6](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_6_S1510237009.md)
-Today was a life demo from our prof.
-That was very interessing, I did not make many notes as I tried to follow the demo.
-
-### [Lecture Paper 7](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_7_S1510237009.md)
-Todays lecture we tried to find pro and contra aspects to IoT or "the internet of broken things" ^^
-That was very cool as we formed bigger groups and discussed the different aspects of IoT.
-
-### [Lecture Paper 8](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Hametner_Repo/Lecture_paper_8_S1510237009.md)
-
-### Lecture Paper 9
-Did not exist, as i was not in the Lecture
 
 ## Exercise
 ### [Lab Outline 1](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/1_Lab_Outline.md)
@@ -52,7 +40,42 @@ On the 10. October 2017 we worked on the programm [ESP8266I2CLCD](https://github
 
 Further we created the program [Temperatur_Simulator](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Lab_Outline/Temperature_Simulation).
 
-# get from EVA
+### [Lab Outline 4](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/4_Lab_Outline.md)
+Date: 11th October 2017
+- [Node-RED](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/Red_Node_Temperature_Simulation/wiring_final.txt)
+- [MongooseOS](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/Mongoose/implementation.js)
 
-### [Project 1](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Projects/Project_1/Project_1_ButtonAndLED)
+
+### [Lab Outline 5](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/5_Lab_Outline.md)
+Date: 16th October 2017 and 17th October 2017
+
+**Inside-Node**
+The node that is supposed to be inside the oven
+- [Autostart.py](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/UlnoIOT_Project01/inside_node/files/autostart.py)
+
+**Outside-Node**
+The node that is supposed to be outside the oven
+- [Autostart.py](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/UlnoIOT_Project01/outside_node/files/autostart.py)
+
+**Integriot**
+- [Run.py](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Lab_Outline/UlnoIOT_Project01/integriot/run.py)
+
+### Lab Outline 6
+Date: 17th October 2017
+- Continued working on Lab Outline 5 and started Project 2
+
+### [Lab Outline 8](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/8_Lab_Outline/8_Lab_Outline.md)
+Date: 24th October 2017 and 25th October 2017
+
+
+## Projects
+### [Project 1](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Projects/Project_1/)
 Our first Project is a kind of fire alarm. More the be found [here](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/Project_1_Outline.md).
+
+### [Project 2](https://github.com/EvaJobst/IOT_HametnerJobst/tree/master/Projects/Project_2/)
+- [Documentation](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/Project_2_Outline.md)
+- [Sensors.ino](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Projects/Project_2/sensors/1_sensors/1_sensors.ino)
+
+### [Project 3](https://github.com/D4Muck/mc-iot/tree/master/4all/project3)
+The third project was realized in collaboration with Muck, Takac and Maringer.
+- [Documentation](https://github.com/EvaJobst/IOT_HametnerJobst/blob/master/Documentation/Project_3_Outline.md)
